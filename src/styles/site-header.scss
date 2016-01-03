@@ -1,0 +1,58 @@
+.siteHeader {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: flex;
+
+  /**
+   * Make the container put as much space as possible
+   * between its children, with the children at either
+   * end laying flush against the container's edges.
+   */
+  justify-content: space-between;
+
+  padding: 10px;
+  background-color: #56727C;
+}
+
+  .siteHeader__section {
+    /**
+     * Lay out the children of this container with
+     * flexbox.
+     */
+    display: flex;
+
+    /**
+     * Align the children in the center, along
+     * the main axis. By default the children will
+     * align along their top edges.
+     */
+    align-items: center;
+  }
+
+    .siteHeader__item {
+      padding: 5px 15px;
+      font-size: 12px;
+
+      & + & {
+        margin-left: 5px;
+      }
+
+      &.is-site-header-item-selected {
+        color: #FFFFFF;
+        background-color: #415F69;
+        border-radius: 4px;
+      }
+    }
+
+    .siteHeaderLogo {
+      font-size: 20px;
+      line-height: 0;
+      color: white;
+    }
+
+    .siteHeaderButton {
+      cursor: pointer;
+      color: #D9E9EF;
+    }

@@ -1,0 +1,18 @@
+{
+  "name": "flexbox-patterns",
+  "version": "0.0.1",
+  "description": "Patterns for using flexbox CSS to build awesome UI components",
+  "repository": "cjcenizal/flexbox-patterns",
+  "author": {
+    "name": "CJ Cenizal",
+    "email": "cj@cenizal.com",
+    "url": "http://www.cenizal.com/"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.2.3",
+    "postcss-cli": "2.3.3"
+  },
+  "scripts": {
+    "build": "sass src/index.scss dist/styles.css && node_modules/.bin/postcss --local-plugins --use autoprefixer --autoprefixer.browsers 'last 2 versions' -o dist/styles.css dist/styles.css && cp src/index.html dist/index.html"
+  }
+}

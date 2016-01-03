@@ -1,0 +1,44 @@
+.stepperInput {
+  /**
+   * Setting display to flex makes this container lay
+   * out its children using flexbox. By default, it 
+   * orders items horizontally, top-aligned.
+   * This has a similar effect to setting the children
+   * to have display: inline-block.
+   */
+  display: flex;
+}
+
+  .stepperInput__input {
+    border-left: 0;
+    border-right: 0;
+    width: 60px;
+    text-align: center;
+  }
+
+.button {
+  cursor: pointer;
+  padding: 5px 15px;
+  color: #FFFFFF;
+  background-color: #4EBBE4;
+  font-size: 12px;
+  border: 1px solid #16A2D7;
+  border-radius: 4px;
+}
+
+.button--addOnLeft {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button--addOnRight {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input {
+  border: 1px solid #D7DBDD;
+  padding: 0 10px;
+  border-radius: 0;
+  box-shadow: none;
+}

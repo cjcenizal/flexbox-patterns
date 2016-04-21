@@ -31,10 +31,8 @@
   padding: 10px;
 }
 
-  .centeredPrompt__item {
-    & + & {
-      margin-top: 5px;
-    }
+  .centeredPrompt__item + .centeredPrompt__item {
+    margin-top: 5px;
   }
 
     .centeredPromptIcon {

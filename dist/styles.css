@@ -1,3 +1,7 @@
+
+/*=====================================================
+  contents of: styles/stepper-input.css
+  =====================================================*/
 .stepperInput {
   /**
    * Setting display to flex makes this container lay
@@ -8,13 +12,15 @@
    */
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+}
 
-.stepperInput__input {
-  border-left: 0;
-  border-right: 0;
-  width: 60px;
-  text-align: center; }
+  .stepperInput__input {
+    border-left: 0;
+    border-right: 0;
+    width: 60px;
+    text-align: center;
+  }
 
 .button {
   cursor: pointer;
@@ -23,22 +29,28 @@
   background-color: #4EBBE4;
   font-size: 12px;
   border: 1px solid #16A2D7;
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 
 .button--addOnLeft {
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
+  border-bottom-right-radius: 0;
+}
 
 .button--addOnRight {
   border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
+  border-bottom-left-radius: 0;
+}
 
 .input {
   border: 1px solid #D7DBDD;
   padding: 0 10px;
   border-radius: 0;
-  box-shadow: none; }
-
+  box-shadow: none;
+}
+/*=====================================================
+  contents of: styles/tabs.css
+  =====================================================*/
 .tabs {
   /**
    * Setting display to flex makes this container lay
@@ -48,17 +60,25 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #D7DBDD; }
 
-.tab {
-  cursor: pointer;
-  padding: 5px 30px;
-  color: #16A2D7;
-  font-size: 12px;
-  border-bottom: 2px solid transparent; }
+  border-bottom: 1px solid #D7DBDD;
+}
+
+  .tab {
+    cursor: pointer;
+    padding: 5px 30px;
+    color: #16A2D7;
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+  }
+
   .tab.is-tab-selected {
-    border-bottom-color: #4EBBE4; }
+    border-bottom-color: #4EBBE4;
+  }
 
+/*=====================================================
+  contents of: styles/site-header.css
+  =====================================================*/
 .siteHeader {
   /**
    * Lay out the children of this container with
@@ -67,6 +87,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   /**
    * Make the container put as much space as possible
    * between its children, with the children at either
@@ -75,45 +96,59 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   padding: 10px;
-  background-color: #56727C; }
+  background-color: #56727C;
+}
 
-.siteHeader__section {
-  /**
-   * Lay out the children of this container with
-   * flexbox.
-   */
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  /**
-   * Align the children in the center, along
-   * the main axis. By default the children will
-   * align along their top edges.
-   */
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  .siteHeader__section {
+    /**
+     * Lay out the children of this container with
+     * flexbox.
+     */
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 
-.siteHeader__item {
-  padding: 5px 15px;
-  font-size: 12px; }
-  .siteHeader__item + .siteHeader__item {
-    margin-left: 5px; }
-  .siteHeader__item.is-site-header-item-selected {
-    color: #FFFFFF;
-    background-color: #415F69;
-    border-radius: 4px; }
+    /**
+     * Align the children in the center, along
+     * the main axis. By default the children will
+     * align along their top edges.
+     */
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 
-.siteHeaderLogo {
-  font-size: 20px;
-  line-height: 0;
-  color: white; }
+    .siteHeader__item {
+      padding: 5px 15px;
+      font-size: 12px;
+    }
 
-.siteHeaderButton {
-  cursor: pointer;
-  color: #D9E9EF; }
+    .siteHeader__item + .siteHeader__item {
+      margin-left: 5px;
+    }
 
+    .siteHeader__item.is-site-header-item-selected {
+      color: #FFFFFF;
+      background-color: #415F69;
+      border-radius: 4px;
+    }
+
+    .siteHeaderLogo {
+      font-size: 20px;
+      line-height: 0;
+      color: white;
+    }
+
+    .siteHeaderButton {
+      cursor: pointer;
+      color: #D9E9EF;
+    }
+
+/*=====================================================
+  contents of: styles/form-footer.css
+  =====================================================*/
 .formFooter {
   /**
    * Lay out the children of this container with
@@ -122,6 +157,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   /**
    * Align the children in the center, along
    * the main axis, which is horizontal in this case.
@@ -129,63 +165,70 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  /**
-  * Make the container put as much space as possible
-  * between its children, with the children at either
-  * end laying flush against the container's edges.
-  */
+
+   /**
+   * Make the container put as much space as possible
+   * between its children, with the children at either
+   * end laying flush against the container's edges.
+   */
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   border-top: 1px solid #D7DBDD;
-  padding: 10px; }
+  padding: 10px;
+}
 
-.formFooter__section {
-  /**
-   * This container orders items horizontally.
-   */
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  /**
-   * It aligns them vertically in the center.
-   */
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  .formFooter__section {
+    /**
+     * This container orders items horizontally.
+     */
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 
-.formFooter__item + .formFooter__item {
-  margin-left: 5px; }
+    /**
+     * It aligns them vertically in the center.
+     */
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 
-.formFooterFeedback {
-  color: #86969C;
-  font-size: 12px;
-  line-height: 0; }
+    .formFooter__item + .formFooter__item {
+      margin-left: 5px;
+    }
 
-.formFooterSpinner {
-  -webkit-animation: formFooterSpinner 1s infinite steps(8, end);
-          animation: formFooterSpinner 1s infinite steps(8, end); }
+    .formFooterFeedback {
+      color: #86969C;
+      font-size: 12px;
+      line-height: 0;
+    }
+
+    .formFooterSpinner {
+      -webkit-animation: formFooterSpinner 1s infinite steps(8, end);
+              animation: formFooterSpinner 1s infinite steps(8, end);
+    }
 
 @-webkit-keyframes formFooterSpinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+  0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
 
 @keyframes formFooterSpinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+  0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
 .button--clear {
   color: #16A2D7;
   background-color: #FFFFFF;
-  border: 1px solid #FFFFFF; }
+  border: 1px solid #FFFFFF;
+}
 
+/*=====================================================
+  contents of: styles/side-bar.css
+  =====================================================*/
 .sideBar {
   /**
    * This container orders items according to flexbox
@@ -195,6 +238,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   /**
    * ...sets the main axis to be vertical instead of
    * horizontal, so now the children are laid out
@@ -203,6 +247,7 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+
   /**
    * It will also put as much space as possible
    * between its children, with the children at either end
@@ -211,21 +256,29 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   height: 300px;
   width: 150px;
   border-right: 1px solid #D7DBDD;
   background-color: #FCFDFD;
-  padding: 10px; }
+  padding: 10px;
+}
 
-.sideBar__item {
-  cursor: pointer;
-  padding: 5px 10px;
-  color: #16A2D7;
-  font-size: 12px; }
+  .sideBar__item {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #16A2D7;
+    font-size: 12px;
+  }
+
   .sideBar__item.is-side-bar-item-selected {
     background-color: #EEF3F5;
-    border-radius: 4px; }
+    border-radius: 4px;
+  }
 
+/*=====================================================
+  contents of: styles/centered-prompt.css
+  =====================================================*/
 .centeredPrompt {
   /**
    * Lay out the children of this container with
@@ -234,6 +287,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   /**
    * Rotate the main axis so that the children
    * are laid out vertically, the same as in the
@@ -242,6 +296,7 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+
   /**
    * Align the children in the center, along
    * the main axis. Because the direction is
@@ -251,6 +306,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+
   /**
    * Instead of pushing the children apart, as in
    * previous examples, we will group them together
@@ -259,31 +315,41 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+
   min-height: 300px;
-  padding: 10px; }
+  padding: 10px;
+}
 
-.centeredPrompt__item + .centeredPrompt__item {
-  margin-top: 5px; }
+  .centeredPrompt__item + .centeredPrompt__item {
+    margin-top: 5px;
+  }
 
-.centeredPromptIcon {
-  font-size: 60px;
-  line-height: 0; }
+    .centeredPromptIcon {
+      font-size: 60px;
+      line-height: 0;
+    }
 
-.centeredPromptLabel {
-  color: #86969C;
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center; }
+    .centeredPromptLabel {
+      color: #86969C;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
 
-.centeredPromptDetails {
-  color: #86969C;
-  font-size: 16px;
-  margin-bottom: 10px;
-  text-align: center; }
+    .centeredPromptDetails {
+      color: #86969C;
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
 .icon {
-  color: #BCD2DA; }
+  color: #BCD2DA;
+}
 
+/*=====================================================
+  contents of: styles/centered-icon.css
+  =====================================================*/
 .centeredIcon {
   /**
    * Lay out the children of this container with
@@ -292,6 +358,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   /**
    * As in the above "Centered prmopt" example,
    * we'll rotate the main axis so that the children
@@ -300,6 +367,7 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+
   /**
    * And just like in that example, align the children
    * in the center, along the main axis.
@@ -307,6 +375,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+
   /**
    * Same thing here as before: group the children
    * together in the center of their container.
@@ -314,13 +383,21 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+
   border: 1px solid #D7DBDD;
   font-size: 40px;
   width: 90px;
   height: 90px;
   border-radius: 100%;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.05); }
+  box-shadow:
+    0 2px 1px rgba(0, 0, 0, 0.05),
+    0 2px 3px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+}
 
+/*=====================================================
+  contents of: styles/feature-list.css
+  =====================================================*/
 .featureListItem {
   /**
    * Lay out the children of this container with
@@ -329,6 +406,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   /**
    * Align the children in the center, along
    * the main axis, which is horizontal in this case.
@@ -336,10 +414,14 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+
   max-width: 400px;
-  padding: 10px; }
-  .featureListItem + .featureListItem {
-    border-top: 1px solid #D7DBDD; }
+  padding: 10px;
+}
+
+.featureListItem + .featureListItem {
+  border-top: 1px solid #D7DBDD;
+}
 
 .featureListItem--reverse {
   /**
@@ -350,20 +432,27 @@
    */
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
+          flex-direction: row-reverse;
+}
 
-.featureListItem__icon,
-.featureListItem__description {
-  padding: 5px 15px; }
+  .featureListItem__icon,
+  .featureListItem__description {
+    padding: 5px 15px;
+  }
 
-.featureListItem__icon {
-  font-size: 50px;
-  line-height: 0; }
+  .featureListItem__icon {
+    font-size: 50px;
+    line-height: 0;
+  }
 
-.featureListItem__description {
-  color: #86969C;
-  font-size: 12px; }
+  .featureListItem__description {
+    color: #86969C;
+    font-size: 12px;
+  }
 
+/*=====================================================
+  contents of: styles/card.css
+  =====================================================*/
 .card {
   /**
    * Lay out the children of this container with
@@ -372,6 +461,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   /**
    * Rotate the main axis so that the children
    * are laid out vertically.
@@ -379,66 +469,82 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+
   border: 1px solid #CAD0D2;
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
-.card__description {
-  /**
-   * Lay out the children of this container with
-   * flexbox.
-   */
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  /**
-   * We're going to lay out this element's children
-   * just like in the "Centered prompt" example.
-   * First we'll rotate the main axis so that the 
-   * children are laid out vertically.
-   */
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /**
-   * Just like in the "Centered prompt" example,
-   * we'll align the children in the center, along
-   * the main axis.
-   */
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /**
-   * And just like in the "Centered prompt", we'll
-   * group the children in the center of their
-   * container.
-   */
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 15px; }
+  .card__description {
+    /**
+     * Lay out the children of this container with
+     * flexbox.
+     */
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 
-.card__descriptionIcon {
-  font-size: 32px;
-  margin-bottom: 10px; }
+    /**
+     * We're going to lay out this element's children
+     * just like in the "Centered prompt" example.
+     * First we'll rotate the main axis so that the 
+     * children are laid out vertically.
+     */
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
-.card__descriptionText {
-  color: #57727C;
-  font-size: 12px;
-  text-align: center; }
+    /**
+     * Just like in the "Centered prompt" example,
+     * we'll align the children in the center, along
+     * the main axis.
+     */
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 
-.card__price {
-  text-align: center;
-  color: #57727C;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 15px;
-  border-top: 1px solid #D7DBDD;
-  background-color: #EEF3F5; }
+    /**
+     * And just like in the "Centered prompt", we'll
+     * group the children in the center of their
+     * container.
+     */
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    padding: 15px;
+  }
+
+    .card__descriptionIcon {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .card__descriptionText {
+      color: #57727C;
+      font-size: 12px;
+      text-align: center;
+    }
+
+  .card__price {
+    text-align: center;
+    color: #57727C;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-top: 1px solid #D7DBDD;
+    background-color: #EEF3F5;
+  }
 
 .card--fixedWidth {
-  max-width: 120px; }
-
+  max-width: 120px;
+}
+/*=====================================================
+  contents of: index.css
+  =====================================================*/
+/*=====================================================
+  contents of: styles/card-group.css
+  =====================================================*/
 .cardGroup {
   /**
    * Lay out the children of this container with
@@ -447,54 +553,61 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   border: 1px solid #CAD0D2;
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
-.cardGroup__card {
-  /**
-   * The flex property is a short-hand for setting
-   * the flex-shrink, flex-grow, and flex-basis
-   * properties. These properties control how the
-   * element resizes to fill its container.
-   *
-   * We'll also set flex-grow to 1 so that it
-   * will expand to fill its container. (The
-   * default value is 1.)
-   *
-   * We'll set flex-shrink to 1 so that the element
-   * will shrink as its container gets smaller.
-   * (The default value is 0.)
-   *
-   * Last, we set flex-basis to 0 so that its
-   * size is solely determined by the size of
-   * the container. (The default value
-   * is auto, which would cause the content's
-   * size to also be a factor in this calculation.)
-   *
-   * The net result of these properties is that the
-   * element is a fluid size, and will expand and
-   * shrink with its container and siblings, but
-   * they will all have the same size, even if they
-   * have different amounts of content.
-   */
-  -webkit-flex: 1 1 0;
-      -ms-flex: 1 1 0;
-          flex: 1 1 0;
-  border: none;
-  border-radius: 0; }
+  .cardGroup__card {
+    /**
+     * The flex property is a short-hand for setting
+     * the flex-shrink, flex-grow, and flex-basis
+     * properties. These properties control how the
+     * element resizes to fill its container.
+     *
+     * We'll also set flex-grow to 1 so that it
+     * will expand to fill its container. (The
+     * default value is 1.)
+     *
+     * We'll set flex-shrink to 1 so that the element
+     * will shrink as its container gets smaller.
+     * (The default value is 0.)
+     *
+     * Last, we set flex-basis to 0 so that its
+     * size is solely determined by the size of
+     * the container. (The default value
+     * is auto, which would cause the content's
+     * size to also be a factor in this calculation.)
+     *
+     * The net result of these properties is that the
+     * element is a fluid size, and will expand and
+     * shrink with its container and siblings, but
+     * they will all have the same size, even if they
+     * have different amounts of content.
+     */
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0;
+
+    border: none;
+    border-radius: 0;
+  }
+
   .cardGroup__card + .cardGroup__card {
-    border-left: 1px solid #D7DBDD; }
+    border-left: 1px solid #D7DBDD;
+  }
 
-.cardGroup__cardDescription {
-  /**
-   * We're doing almost the exact same thing here as
-   * we did above. The difference is that its
-   * flex-basis is auto, so now the size of its content
-   * will affect how large it is.
-   */
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto; }
+  .cardGroup__cardDescription {
+    /**
+     * We're doing almost the exact same thing here as
+     * we did above. The difference is that its
+     * flex-basis is auto, so now the size of its content
+     * will affect how large it is.
+     */
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
 
-/*# sourceMappingURL=styles.css.map */
+

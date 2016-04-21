@@ -32,9 +32,9 @@
     padding: 5px 10px;
     color: #16A2D7;
     font-size: 12px;
+  }
 
-    &.is-side-bar-item-selected {
-      background-color: #EEF3F5;
-      border-radius: 4px;
-    }
+  .sideBar__item.is-side-bar-item-selected {
+    background-color: #EEF3F5;
+    border-radius: 4px;
   }

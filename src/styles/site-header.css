@@ -34,16 +34,16 @@
     .siteHeader__item {
       padding: 5px 15px;
       font-size: 12px;
+    }
 
-      & + & {
-        margin-left: 5px;
-      }
+    .siteHeader__item + .siteHeader__item {
+      margin-left: 5px;
+    }
 
-      &.is-site-header-item-selected {
-        color: #FFFFFF;
-        background-color: #415F69;
-        border-radius: 4px;
-      }
+    .siteHeader__item.is-site-header-item-selected {
+      color: #FFFFFF;
+      background-color: #415F69;
+      border-radius: 4px;
     }
 
     .siteHeaderLogo {

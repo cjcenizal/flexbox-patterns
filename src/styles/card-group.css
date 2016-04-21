@@ -41,10 +41,10 @@
 
     border: none;
     border-radius: 0;
+  }
 
-    & + & {
-      border-left: 1px solid #D7DBDD;
-    }
+  .cardGroup__card + .cardGroup__card {
+    border-left: 1px solid #D7DBDD;
   }
 
   .cardGroup__cardDescription {

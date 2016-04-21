@@ -4,7 +4,7 @@
    * flexbox, which is horizontal by default.
    */
   display: flex;
-  
+
   /**
    * Align the children in the center, along
    * the main axis, which is horizontal in this case.
@@ -13,10 +13,10 @@
 
   max-width: 400px;
   padding: 10px;
-  
-  & + & {
-    border-top: 1px solid #D7DBDD;
-  }
+}
+
+.featureListItem + .featureListItem {
+  border-top: 1px solid #D7DBDD;
 }
 
 .featureListItem--reverse {
@@ -29,7 +29,7 @@
   flex-direction: row-reverse;
 }
 
-  .featureListItem__icon, 
+  .featureListItem__icon,
   .featureListItem__description {
     padding: 5px 15px;
   }

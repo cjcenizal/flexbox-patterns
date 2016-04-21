@@ -27,17 +27,15 @@
      * This container orders items horizontally.
      */
     display: flex;
-    
+
     /**
      * It aligns them vertically in the center.
      */
     align-items: center;
   }
 
-    .formFooter__item {
-      & + & {
-        margin-left: 5px;
-      }
+    .formFooter__item + .formFooter__item {
+      margin-left: 5px;
     }
 
     .formFooterFeedback {
@@ -47,7 +45,7 @@
     }
 
     .formFooterSpinner {
-       animation: formFooterSpinner 1s infinite steps(8, end);
+      animation: formFooterSpinner 1s infinite steps(8, end);
     }
 
 @keyframes formFooterSpinner {

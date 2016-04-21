@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+  head
+
+    title Flexbox Patterns Demo Page
+
+    meta(
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    )
+
+    //- Fonts
+    link(
+      href="http://fonts.googleapis.com/css?family=Lato:400"
+      rel="stylesheet"
+      type="text/css"
+    )
+
+    //- Font aweosome icons
+    link(
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    )
+
+    //- CSS
+    link(
+      href="styles.css"
+      rel="stylesheet"
+      type="text/css"
+    )
+
+    style.
+      body {
+        padding: 40px;
+        font-family: "Lato", "Helvetica", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .demo {
+        max-width: 500px;
+        margin-bottom: 40px;
+      }
+
+  body
+
+    // Card group
+    .demo
+      include ./examples/card-group.html
+
+    // Card
+    .demo
+      include ./examples/card.html
+
+    // Centered icon
+    .demo
+      include ./examples/centered-icon.html
+
+    // Centered prompt
+    .demo
+      include ./examples/centered-prompt.html
+
+    // Feature list
+    .demo
+      include ./examples/feature-list.html
+
+    // Form footer
+    .demo
+      include ./examples/form-footer.html
+
+    // Side bar
+    .demo
+      include ./examples/side-bar.html
+
+    // Site header
+    .demo
+      include ./examples/site-header.html
+
+    // Stepper input
+    .demo
+      include ./examples/stepper-input.html
+
+    // Tabs
+    .demo
+      include ./examples/tabs.html

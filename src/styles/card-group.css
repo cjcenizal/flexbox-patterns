@@ -19,11 +19,11 @@
      *
      * We'll also set flex-grow to 1 so that it
      * will expand to fill its container. (The
-     * default value is 1.)
+     * default value is 0.)
      *
      * We'll set flex-shrink to 1 so that the element
      * will shrink as its container gets smaller.
-     * (The default value is 0.)
+     * (The default value is 1.)
      *
      * Last, we set flex-basis to 0 so that its
      * size is solely determined by the size of

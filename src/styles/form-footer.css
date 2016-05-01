@@ -53,6 +53,15 @@
   100% { transform: rotate(360deg); }
 }
 
+.button {
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: #4ebbe4;
+  border: 1px solid #16a2d7;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
 .button--clear {
   color: #16A2D7;
   background-color: #FFFFFF;

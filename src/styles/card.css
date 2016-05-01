@@ -26,7 +26,7 @@
     /**
      * We're going to lay out this element's children
      * just like in the "Centered prompt" example.
-     * First we'll rotate the main axis so that the 
+     * First we'll rotate the main axis so that the
      * children are laid out vertically.
      */
     flex-direction: column;
@@ -45,7 +45,7 @@
      */
     justify-content: center;
 
-    padding: 15px;
+    padding: 15px 0;
   }
 
     .card__descriptionIcon {
@@ -57,6 +57,7 @@
       color: #57727C;
       font-size: 12px;
       text-align: center;
+      max-width: calc(100% - 30px);
     }
 
   .card__price {

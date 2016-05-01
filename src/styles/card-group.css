@@ -17,13 +17,13 @@
      * properties. These properties control how the
      * element resizes to fill its container.
      *
-     * We'll also set flex-grow to 1 so that it
-     * will expand to fill its container. (The
+     * We'll set flex-grow to 1 so that it will
+     * expand to fill its container. (The default
      * default value is 0.)
      *
-     * We'll set flex-shrink to 1 so that the element
-     * will shrink as its container gets smaller.
-     * (The default value is 1.)
+     * We'll also set flex-shrink to 1 so that the
+     * element will shrink as its container gets
+     * smaller. (The default value is 1.)
      *
      * Last, we set flex-basis to 0 so that its
      * size is solely determined by the size of
@@ -36,8 +36,14 @@
      * shrink with its container and siblings, but
      * they will all have the same size, even if they
      * have different amounts of content.
+     *
+     * NOTE: IE11 ignores flex short-hand declarations
+     * with unitless flex-basis values. So we have to
+     * use 0% instead of 0 as a workaround. You can
+     * find more info at:
+     * github.com/philipwalton/flexbugs.
      */
-    flex: 1 1 0;
+    flex: 1 1 0%;
 
     border: none;
     border-radius: 0;

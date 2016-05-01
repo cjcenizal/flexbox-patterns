@@ -487,7 +487,7 @@
     /**
      * We're going to lay out this element's children
      * just like in the "Centered prompt" example.
-     * First we'll rotate the main axis so that the 
+     * First we'll rotate the main axis so that the
      * children are laid out vertically.
      */
     -webkit-flex-direction: column;
@@ -512,7 +512,7 @@
         -ms-flex-pack: center;
             justify-content: center;
 
-    padding: 15px;
+    padding: 15px 0;
   }
 
     .card__descriptionIcon {
@@ -524,6 +524,7 @@
       color: #57727C;
       font-size: 12px;
       text-align: center;
+      max-width: calc(100% - 30px);
     }
 
   .card__price {
@@ -539,6 +540,7 @@
 .card--fixedWidth {
   max-width: 120px;
 }
+
 /*=====================================================
   contents of: index.css
   =====================================================*/
@@ -566,13 +568,13 @@
      * properties. These properties control how the
      * element resizes to fill its container.
      *
-     * We'll also set flex-grow to 1 so that it
-     * will expand to fill its container. (The
+     * We'll set flex-grow to 1 so that it will
+     * expand to fill its container. (The default
      * default value is 0.)
      *
-     * We'll set flex-shrink to 1 so that the element
-     * will shrink as its container gets smaller.
-     * (The default value is 1.)
+     * We'll also set flex-shrink to 1 so that the
+     * element will shrink as its container gets
+     * smaller. (The default value is 1.)
      *
      * Last, we set flex-basis to 0 so that its
      * size is solely determined by the size of
@@ -585,10 +587,16 @@
      * shrink with its container and siblings, but
      * they will all have the same size, even if they
      * have different amounts of content.
+     *
+     * NOTE: IE11 ignores flex short-hand declarations
+     * with unitless flex-basis values. So we have to
+     * use 0% instead of 0 as a workaround. You can
+     * find more info at:
+     * github.com/philipwalton/flexbugs.
      */
-    -webkit-flex: 1 1 0;
-        -ms-flex: 1 1 0;
-            flex: 1 1 0;
+    -webkit-flex: 1 1 0%;
+        -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
 
     border: none;
     border-radius: 0;

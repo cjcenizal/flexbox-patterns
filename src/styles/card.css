@@ -32,18 +32,18 @@
     flex-direction: column;
 
     /**
-     * Just like in the "Centered prompt" example,
-     * we'll align the children in the center, along
-     * the main axis.
-     */
-    align-items: center;
-
-    /**
-     * And just like in the "Centered prompt", we'll
+     * Just like in the "Centered prompt", we'll
      * group the children in the center of their
      * container.
      */
     justify-content: center;
+
+    /**
+     * And just like in the "Centered prompt" example,
+     * we'll align the children in the center, along
+     * the main axis.
+     */
+    align-items: center;
 
     padding: 15px 0;
   }

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 @import url("./styles/stepper-input.css");
 @import url("./styles/tabs.css");
@@ -9,3 +12,6 @@
 @import url("./styles/feature-list.css");
 @import url("./styles/card.css");
 @import url("./styles/card-group.css");
+@import url("./styles/photo.css");
+@import url("./styles/gallery.css");
+@import url("./styles/mosaic.css");

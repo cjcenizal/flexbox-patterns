@@ -13,19 +13,19 @@
   flex-direction: column;
 
   /**
+   * Instead of pushing the children apart, as in
+   * previous examples, we will group them together
+   * in the center of their container.
+   */
+  justify-content: center;
+
+  /**
    * Align the children in the center, along
    * the main axis. Because the direction is
    * "column" this has a similar effect as setting
    * text-align: center.
    */
   align-items: center;
-
-  /**
-   * Instead of pushing the children apart, as in
-   * previous examples, we will group them together
-   * in the center of their container.
-   */
-  justify-content: center;
 
   min-height: 300px;
   padding: 10px;

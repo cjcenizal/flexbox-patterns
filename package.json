@@ -11,13 +11,15 @@
   "devDependencies": {
     "autoprefixer": "6.2.3",
     "css-concat": "0.0.4",
+    "cpx": "1.3.1",
     "jade": "1.11.0",
     "postcss-cli": "2.3.3"
   },
   "scripts": {
-    "build": "npm run compileCss && npm run autoPrefixCss && npm run compileHtml",
-    "compileCss": "node_modules/.bin/css-concat src/index.css dist/styles.css",
-    "autoPrefixCss": "node_modules/.bin/postcss --local-plugins --use autoprefixer --autoprefixer.browsers 'last 2 versions' -o dist/styles.css dist/styles.css",
-    "compileHtml": "node_modules/.bin/jade src/index.jade -P -o dist"
+    "build": "npm run copyImages && npm run compileCss && npm run autoPrefixCss && npm run compileHtml",
+    "copyImages": "cpx \"src/images/**/*\" dist/images",
+    "compileCss": "css-concat src/index.css dist/styles.css",
+    "autoPrefixCss": "postcss --local-plugins --use autoprefixer --autoprefixer.browsers 'last 2 versions' -o dist/styles.css dist/styles.css",
+    "compileHtml": "jade src/index.jade -P -o dist"
   }
 }

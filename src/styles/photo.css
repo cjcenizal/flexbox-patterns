@@ -1,0 +1,38 @@
+.photo {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: flex;
+
+  /**
+   * Align all the children to the end of the
+   * secondary axis. This is the bottom, by default.
+   */
+  align-items: flex-end;
+
+  /**
+   * Align all the children to the end of the main
+   * axis. This is the right side, by default.
+   */
+  justify-content: flex-end;
+
+  width: 145px;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.photo--large {
+  height: 130px;
+}
+
+.photo1 {
+  background-image: url('../images/dog_1.jpg');
+}

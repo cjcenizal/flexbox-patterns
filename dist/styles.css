@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 /*=====================================================
   contents of: styles/stepper-input.css
@@ -10,7 +13,6 @@
    * This has a similar effect to setting the children
    * to have display: inline-block.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -57,7 +59,6 @@
    * out its children using flexbox, the exact same
    * as in the above "Stepper input" example.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -84,7 +85,6 @@
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -93,9 +93,8 @@
    * between its children, with the children at either
    * end laying flush against the container's edges.
    */
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 
   padding: 10px;
   background-color: #56727C;
@@ -106,7 +105,6 @@
      * Lay out the children of this container with
      * flexbox.
      */
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 
@@ -115,9 +113,8 @@
      * the main axis. By default the children will
      * align along their top edges.
      */
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 
     .siteHeader__item {
@@ -154,7 +151,6 @@
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -162,18 +158,16 @@
    * Align the children in the center, along
    * the main axis, which is horizontal in this case.
    */
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 
-   /**
+  /**
    * Make the container put as much space as possible
    * between its children, with the children at either
    * end laying flush against the container's edges.
    */
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 
   border-top: 1px solid #D7DBDD;
   padding: 10px;
@@ -183,16 +177,14 @@
     /**
      * This container orders items horizontally.
      */
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 
     /**
      * It aligns them vertically in the center.
      */
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
 
     .formFooter__item + .formFooter__item {
@@ -206,18 +198,12 @@
     }
 
     .formFooterSpinner {
-      -webkit-animation: formFooterSpinner 1s infinite steps(8, end);
-              animation: formFooterSpinner 1s infinite steps(8, end);
+      animation: formFooterSpinner 1s infinite steps(8, end);
     }
 
-@-webkit-keyframes formFooterSpinner {
-  0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-}
-
 @keyframes formFooterSpinner {
-  0%   { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .button--clear {
@@ -235,7 +221,6 @@
    * rules. By default, this would arrange its children
    * horizontally. However, the next property...
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -244,18 +229,16 @@
    * horizontal, so now the children are laid out
    * vertically, from top to bottom.
    */
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 
   /**
    * It will also put as much space as possible
    * between its children, with the children at either end
    * laying flush against the container's edges.
    */
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 
   height: 300px;
   width: 150px;
@@ -284,7 +267,6 @@
    * Lay out the children of this container with
    * flexbox.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -293,9 +275,8 @@
    * are laid out vertically, the same as in the
    * above "Side bar" example.
    */
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 
   /**
    * Align the children in the center, along
@@ -303,18 +284,16 @@
    * "column" this has a similar effect as setting
    * text-align: center.
    */
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 
   /**
    * Instead of pushing the children apart, as in
    * previous examples, we will group them together
    * in the center of their container.
    */
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 
   min-height: 300px;
   padding: 10px;
@@ -355,7 +334,6 @@
    * Lay out the children of this container with
    * flexbox.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -364,25 +342,22 @@
    * we'll rotate the main axis so that the children
    * are ordered vertically.
    */
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 
   /**
    * And just like in that example, align the children
    * in the center, along the main axis.
    */
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 
   /**
    * Same thing here as before: group the children
    * together in the center of their container.
    */
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 
   border: 1px solid #D7DBDD;
   font-size: 40px;
@@ -403,7 +378,6 @@
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -411,9 +385,8 @@
    * Align the children in the center, along
    * the main axis, which is horizontal in this case.
    */
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 
   max-width: 400px;
   padding: 10px;
@@ -430,9 +403,8 @@
    * reverse order of how they appear in the
    * markup.
    */
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
 }
 
   .featureListItem__icon,
@@ -458,7 +430,6 @@
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -466,9 +437,8 @@
    * Rotate the main axis so that the children
    * are laid out vertically.
    */
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 
   border: 1px solid #CAD0D2;
   border-radius: 4px;
@@ -480,7 +450,6 @@
      * Lay out the children of this container with
      * flexbox.
      */
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 
@@ -490,27 +459,24 @@
      * First we'll rotate the main axis so that the
      * children are laid out vertically.
      */
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
 
     /**
      * Just like in the "Centered prompt" example,
      * we'll align the children in the center, along
      * the main axis.
      */
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
 
     /**
      * And just like in the "Centered prompt", we'll
      * group the children in the center of their
      * container.
      */
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 
     padding: 15px 0;
   }
@@ -552,7 +518,6 @@
    * Lay out the children of this container with
    * flexbox, which is horizontal by default.
    */
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 
@@ -594,9 +559,8 @@
      * find more info at:
      * github.com/philipwalton/flexbugs.
      */
-    -webkit-flex: 1 1 0%;
-        -ms-flex: 1 1 0%;
-            flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+        flex: 1 1 0%;
 
     border: none;
     border-radius: 0;
@@ -613,9 +577,198 @@
      * flex-basis is auto, so now the size of its content
      * will affect how large it is.
      */
-    -webkit-flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
   }
+
+/*=====================================================
+  contents of: styles/photo.css
+  =====================================================*/
+.photo {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: -ms-flexbox;
+  display: flex;
+
+  /**
+   * Align all the children to the end of the
+   * secondary axis. This is the bottom, by default.
+   */
+  -ms-flex-align: end;
+      align-items: flex-end;
+
+  /**
+   * Align all the children to the end of the main
+   * axis. This is the right side, by default.
+   */
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+
+  width: 145px;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.photo--large {
+  height: 130px;
+}
+
+.photo1 {
+  background-image: url('images/dog_1.jpg');
+}
+
+/*=====================================================
+  contents of: styles/gallery.css
+  =====================================================*/
+.gallery {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: -ms-flexbox;
+  display: flex;
+
+  /**
+   * Allow the children to wrap to the next "row",
+   * instead of trying to squeeze them all into
+   * a single row.
+   */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  width: 478px;
+  padding: 5px;
+  border: 1px solid #D7DBDD;
+}
+
+.photo2 {
+  background-image: url('images/dog_2.jpg');
+}
+
+.photo3 {
+  background-image: url('images/dog_3.jpg');
+}
+
+.photo4 {
+  background-image: url('images/dog_4.jpg');
+}
+
+.photo5 {
+  background-image: url('images/dog_5.jpg');
+}
+
+.photo6 {
+  background-image: url('images/dog_1.jpg');
+}
+
+.photo7 {
+  background-image: url('images/dog_2.jpg');
+}
+
+.photo8 {
+  background-image: url('images/dog_3.jpg');
+}
+
+.photo9 {
+  background-image: url('images/dog_4.jpg');
+}
+
+.photo10 {
+  background-image: url('images/dog_5.jpg');
+}
+
+/*=====================================================
+  contents of: styles/mosaic.css
+  =====================================================*/
+.mosaic {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: -ms-flexbox;
+  display: flex;
+
+  /**
+   * Set the main axis to be vertical instead of
+   * horizontal, so now the children are laid out
+   * vertically, from top to bottom.
+   */
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  /**
+   * Now when the children wrap, they'll wrap to the
+   * next "column".
+   */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  width: 478px;
+  height: 370px;
+  padding: 6px;
+  border: 1px solid #D7DBDD;
+  overflow: auto;
+}
+
+.photo:last-child {
+  /**
+   * This is the first part of a flexbox hack.
+   * It addresses a problem flexbox has with scrolling
+   * content. Without this hack, the children on the
+   * far right of the container will be flush against
+   * the container's right edge.
+   */
+  position: relative;
+}
+
+.photo:last-child::after {
+  /**
+   * This is the second part of the hack. It creates
+   * an invisible element on the last child that
+   * forces a space between the child and the right
+   * edge of the container.
+   */
+  display: block;
+  width: 11px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  visibility: hidden;
+  content: "";
+}
+
+.photo--small {
+  height: 70px;
+}
+
+.photo--medium {
+  height: 90px;
+}
+
+.photo11 {
+  background-image: url('images/dog_1.jpg');
+}
+
+.photo12 {
+  background-image: url('images/dog_2.jpg');
+}
+
+.photo13 {
+  background-image: url('images/dog_3.jpg');
+}
+
+.photo14 {
+  background-image: url('images/dog_4.jpg');
+}
 
 

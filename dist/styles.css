@@ -155,19 +155,19 @@
   display: flex;
 
   /**
-   * Align the children in the center, along
-   * the main axis, which is horizontal in this case.
-   */
-  -ms-flex-align: center;
-      align-items: center;
-
-  /**
    * Make the container put as much space as possible
    * between its children, with the children at either
    * end laying flush against the container's edges.
    */
   -ms-flex-pack: justify;
       justify-content: space-between;
+
+  /**
+   * Align the children in the center, along
+   * the main axis, which is horizontal in this case.
+   */
+  -ms-flex-align: center;
+      align-items: center;
 
   border-top: 1px solid #D7DBDD;
   padding: 10px;
@@ -279,6 +279,14 @@
       flex-direction: column;
 
   /**
+   * Instead of pushing the children apart, as in
+   * previous examples, we will group them together
+   * in the center of their container.
+   */
+  -ms-flex-pack: center;
+      justify-content: center;
+
+  /**
    * Align the children in the center, along
    * the main axis. Because the direction is
    * "column" this has a similar effect as setting
@@ -286,14 +294,6 @@
    */
   -ms-flex-align: center;
       align-items: center;
-
-  /**
-   * Instead of pushing the children apart, as in
-   * previous examples, we will group them together
-   * in the center of their container.
-   */
-  -ms-flex-pack: center;
-      justify-content: center;
 
   min-height: 300px;
   padding: 10px;
@@ -346,18 +346,19 @@
       flex-direction: column;
 
   /**
-   * And just like in that example, align the children
-   * in the center, along the main axis.
-   */
-  -ms-flex-align: center;
-      align-items: center;
-
-  /**
    * Same thing here as before: group the children
    * together in the center of their container.
    */
   -ms-flex-pack: center;
       justify-content: center;
+
+  /**
+   * Just like in the "Centered prmopt" example,
+   * align the children in the center, along the
+   * main axis.
+   */
+  -ms-flex-align: center;
+      align-items: center;
 
   border: 1px solid #D7DBDD;
   font-size: 40px;
@@ -463,20 +464,20 @@
         flex-direction: column;
 
     /**
-     * Just like in the "Centered prompt" example,
-     * we'll align the children in the center, along
-     * the main axis.
-     */
-    -ms-flex-align: center;
-        align-items: center;
-
-    /**
-     * And just like in the "Centered prompt", we'll
+     * Just like in the "Centered prompt", we'll
      * group the children in the center of their
      * container.
      */
     -ms-flex-pack: center;
         justify-content: center;
+
+    /**
+     * And just like in the "Centered prompt" example,
+     * we'll align the children in the center, along
+     * the main axis.
+     */
+    -ms-flex-align: center;
+        align-items: center;
 
     padding: 15px 0;
   }
@@ -593,18 +594,18 @@
   display: flex;
 
   /**
-   * Align all the children to the end of the
-   * secondary axis. This is the bottom, by default.
-   */
-  -ms-flex-align: end;
-      align-items: flex-end;
-
-  /**
    * Align all the children to the end of the main
    * axis. This is the right side, by default.
    */
   -ms-flex-pack: end;
       justify-content: flex-end;
+
+  /**
+   * Align all the children to the end of the
+   * secondary axis. This is the bottom, by default.
+   */
+  -ms-flex-align: end;
+      align-items: flex-end;
 
   width: 145px;
   margin: 5px;

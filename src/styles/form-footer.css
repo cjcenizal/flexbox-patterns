@@ -6,17 +6,17 @@
   display: flex;
 
   /**
-   * Align the children in the center, along
-   * the main axis, which is horizontal in this case.
-   */
-  align-items: center;
-
-  /**
    * Make the container put as much space as possible
    * between its children, with the children at either
    * end laying flush against the container's edges.
    */
   justify-content: space-between;
+
+  /**
+   * Align the children in the center, along
+   * the main axis, which is horizontal in this case.
+   */
+  align-items: center;
 
   border-top: 1px solid #D7DBDD;
   padding: 10px;

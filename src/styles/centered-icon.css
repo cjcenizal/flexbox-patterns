@@ -13,16 +13,17 @@
   flex-direction: column;
 
   /**
-   * And just like in that example, align the children
-   * in the center, along the main axis.
-   */
-  align-items: center;
-
-  /**
    * Same thing here as before: group the children
    * together in the center of their container.
    */
   justify-content: center;
+
+  /**
+   * Just like in the "Centered prmopt" example,
+   * align the children in the center, along the
+   * main axis.
+   */
+  align-items: center;
 
   border: 1px solid #D7DBDD;
   font-size: 40px;

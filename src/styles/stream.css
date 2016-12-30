@@ -1,0 +1,18 @@
+.stream {
+  /**
+   * Lay out the children of this container with
+   * flexbox.
+   */
+  display: flex;
+
+  /*
+   * Set the main axis to be vertical, but present
+   * the children in reverse order of that in which
+   * they occur in the DOM.
+   */
+  flex-direction: column-reverse;
+}
+
+.post + .post {
+  margin-bottom: 5px;
+}

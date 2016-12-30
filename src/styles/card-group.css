@@ -13,7 +13,7 @@
   .cardGroup__card {
     /**
      * The flex property is a short-hand for setting
-     * the flex-shrink, flex-grow, and flex-basis
+     * the flex-grow, flex-shrink, and flex-basis
      * properties. These properties control how the
      * element resizes to fill its container.
      *

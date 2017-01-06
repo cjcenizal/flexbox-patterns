@@ -1,0 +1,156 @@
+.post {
+  /**
+   * Lay out the children of this container with
+   * flexbox, which is horizontal by default.
+   */
+  display: flex;
+}
+
+.postUser {
+  /**
+   * The flex property is a short-hand for setting
+   * the flex-grow, flex-shrink, and flex-basis
+   * properties. These properties control how the
+   * element resizes to fill its container.
+   *
+   * The value we're using here is actually the
+   * default, but I'm including so I can explain it
+   * a bit. The default value equates to:
+   *
+   * - flex-grow: 0
+   * - flex-shrink: 1
+   * - flex-basis: auto
+   *
+   * We set flex-grow to 0, so this element won't
+   * expand to fill its container.
+   *
+   * We'll then set flex-shrink to 1 so that the
+   * element will shrink as its container gets
+   * smaller. However, it will only shrink so far
+   * because...
+   *
+   * ...we set flex-basis to auto. This causes
+   * the content's size to also be a factor in the
+   * calculation of the element's size. Because
+   * the width of a child element is set (below),
+   * this element won't shrink below that size.
+   *
+   * The net result is that this element stays a
+   * fixed size, neither expanding nor shrinking.
+   */
+  flex: 0 1 auto;
+
+  padding-bottom: 10px;
+}
+
+  .postUser__portrait {
+    /**
+     * We're using these three flexbox properties
+     * here to center the portrait icon inside of
+     * this element.
+     *
+     * We'll explore these properties in more detail
+     * in the "Stay Centered" section, so I'll only
+     * briefly summarize here:
+     *
+     * - display: flex instructs the browser to
+     *   use flexbox to lay out this element's
+     *   children.
+     * - justify-content: center will center the
+     *   icon along the main axis.
+     * - align-items: center will center the icon
+     *   along the secondary (perpendicular) axis.
+     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 90px;
+    font-size: 70px;
+    line-height: 0;
+  }
+
+  .postUser__name {
+    color: #57727C;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+  }
+
+.postBody {
+  /**
+   * We'll use the short-hand flex property again
+   * here, to make the body of the post expand to
+   * fill the container, and shrink as the container
+   * becomes narrower.
+   *
+   * By setting flex-grow to 1, we cause this
+   * element to expand to fill the container.
+   *
+   * Setting flex-shrink to 1 causes this element
+   * to shrink with the container.
+   *
+   * Last, we set flex-basis to 0 so that its
+   * size is solely determined by the size of
+   * the container. (The default value is auto,
+   * which would cause the content's size to also
+   * be a factor in this calculation.)
+   *
+   * The net result of these properties is that the
+   * element is a fluid size, and will expand and
+   * shrink with its container.
+   *
+   * NOTE: IE11 ignores flex short-hand declarations
+   * with unitless flex-basis values. So we have to
+   * use 0% instead of 0 as a workaround. You can
+   * find more info at:
+   * github.com/philipwalton/flexbugs.
+   */
+  flex: 1 1 0%;
+
+  position: relative;
+  padding: 15px;
+  border: 1px solid #CAD0D2;
+  border-radius: 4px;
+}
+
+.postBody:after,
+.postBody:before {
+  right: 100%;
+  top: 35px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.postBody:after {
+  border-color: transparent;
+  border-right-color: #ffffff;
+  border-width: 8px;
+  margin-top: -8px;
+}
+
+.postBody:before {
+  border-color: transparent;
+  border-right-color: #CAD0D2;
+  border-width: 9px;
+  margin-top: -9px;
+}
+
+  .postBody__content {
+    color: #57727C;
+    font-size: 12px;
+  }
+
+  .postBody__date {
+    margin-top: 5px;
+    color: #86969C;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }

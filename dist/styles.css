@@ -258,6 +258,8 @@
    */
   -ms-flex: 0 1 auto;
       flex: 0 1 auto;
+
+  padding-bottom: 10px;
 }
 
   .postUser__portrait {
@@ -295,6 +297,7 @@
     color: #57727C;
     font-size: 12px;
     font-weight: 700;
+    line-height: 1;
     text-align: center;
   }
 
